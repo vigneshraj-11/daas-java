@@ -5,10 +5,7 @@ WORKDIR /app
 COPY ./pom.xml /app/pom.xml
 COPY ./src ./app/src
 
-RUN mvn -f /app/pom.xml clean package
-
 COPY . /app
-RUN mvn -f /app/pom.xml clean package
 
 FROM openjdk:17-alpine
 EXPOSE 9000
