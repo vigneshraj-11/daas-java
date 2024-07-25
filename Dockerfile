@@ -10,7 +10,7 @@ RUN mvn -f /app/pom.xml clean package
 COPY . /app
 RUN mvn -f /app/pom.xml clean package
 
-FROM openjdk:17-alphine
+FROM openjdk:17-alpine
 EXPOSE 9000
 COPY --from=build /app/target/*.jar daas.jar
 ENTRYPOINT ["sh", "-c", "java -jar /daas.jar"]
