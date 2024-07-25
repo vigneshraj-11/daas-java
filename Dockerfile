@@ -1,16 +1,16 @@
-FROM maven:3.8.4-openjdk-11-slim AS build
+# First stage: Build the application
+FROM maven:3.8.4-openjdk-17 AS build
 
 WORKDIR /app
 
 COPY pom.xml .
 COPY src ./src
 
-RUN mvn clean package -DskipTests
-
-FROM openjdk:11-jre-slim
+# Second stage: Create the runtime image
+FROM openjdk:17-alpine
 
 WORKDIR /app
 
-COPY --from=build /app/target/my-application.jar .
+COPY --from=build /app/target/system-1.0.0.jar .
 
-CMD ["java", "-jar", "my-application.jar"]
+CMD ["java", "-jar", "system-1.0.0.jar"]
