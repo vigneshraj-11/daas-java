@@ -1,16 +1,16 @@
-# First stage: Build the application
 FROM maven:3.8.4-openjdk-17 AS build
 
 WORKDIR /app
 
-COPY pom.xml .
-COPY src ./src
+COPY ./pom.xml /app/pom.xml
+COPY ./src ./app/src
 
-# Second stage: Create the runtime image
-FROM openjdk:17-alpine
+RUN mvn -f /app/pom.xml clean package
 
-WORKDIR /
+COPY . /app
+RUN mvn -f /app/pom.xml clean package
 
-COPY --from=build /target/system-1.0.0.jar .
-
-CMD ["java", "-jar", "system-1.0.0.jar"]
+FROM openjdk:17-alphine
+EXPOSE 9000
+COPY --from=build /app/target/*.jar daas.jar
+ENTRYPOINT ["sh", "-c", "java -jar /daas.jar"]
