@@ -11,6 +11,6 @@ FROM openjdk:11-jre-slim
 
 WORKDIR /app
 
-COPY - from=build /app/target/system-1.0.0.jar .
+COPY --from=build /app/target/my-application.jar .
 
-CMD ["java", "-jar", "system-1.0.0.jar"]
+CMD ["java", "-jar", "my-application.jar"]
