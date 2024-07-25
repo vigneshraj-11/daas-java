@@ -9,8 +9,8 @@ COPY src ./src
 # Second stage: Create the runtime image
 FROM openjdk:17-alpine
 
-WORKDIR /app
+WORKDIR /
 
-COPY --from=build /app/target/system-1.0.0.jar .
+COPY --from=build /target/system-1.0.0.jar .
 
 CMD ["java", "-jar", "system-1.0.0.jar"]
