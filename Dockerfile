@@ -9,8 +9,8 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:11-jre-slim
 
-WORKDIR /
+WORKDIR /app
 
-COPY - from=build /target/system-1.0.0.jar .
+COPY - from=build /app/target/system-1.0.0.jar .
 
 CMD ["java", "-jar", "system-1.0.0.jar"]
