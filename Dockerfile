@@ -1,13 +1,9 @@
-FROM openjdk:17-jdk-slim AS build
+FROM openjdk:17-alpine
 
-COPY pom.xml mvnw ./
-COPY .mvn .mvn
-RUN ./mvnw dependency:resolve
+WORKDIR /app
 
-COPY src src
-RUN ./mvnw package
+COPY target/system-1.0.0.jar app.jar
 
-FROM openjdk:17-jdk-slim
-WORKDIR demo
-COPY --from=build target/*.jar demo.jar
-ENTRYPOINT ["java", "-jar", "demo.jar"]
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
