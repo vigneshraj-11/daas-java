@@ -1,13 +1,11 @@
-FROM maven:3.8.4-openjdk-17 AS build
-
+FROM maven:3.8.4-openjdk-17
+ 
 WORKDIR /app
-
-COPY ./pom.xml /app/pom.xml
-COPY ./src ./app/src
-
-COPY . /app
-
-FROM openjdk:17-alpine
-EXPOSE 9000
-COPY --from=build /app/target/*.jar daas.jar
-ENTRYPOINT ["sh", "-c", "java -jar /daas.jar"]
+ 
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+RUN ./mvnw dependency:go-offline
+ 
+COPY src ./src
+ 
+CMD ["./mvnw", "spring-boot:run"]
