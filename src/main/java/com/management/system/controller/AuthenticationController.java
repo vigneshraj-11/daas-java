@@ -2,6 +2,7 @@ package com.management.system.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,6 +34,13 @@ public class AuthenticationController {
 		this.authenticationService = authenticationService;
 	}
 
+	@Operation(summary = "Server Test", description = "This API used for Test server is work or not.")
+	@Tag(name = "Auth")
+	@GetMapping("/servertest")
+	public String serverTest() {
+		return "Server working fine...";
+	}
+	
 	@Operation(summary = "Create Employee", description = "This API used for create a new Employee.")
 	@Tag(name = "Auth")
 	@PostMapping("/createEmployee")

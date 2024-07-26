@@ -521,3 +521,693 @@ You may wish to exclude one of them to ensure predictable runtime behavior
 2024-07-25T20:35:21.264+05:30  INFO 3076 --- [Management System] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-07-25T20:35:21.268+05:30  INFO 3076 --- [Management System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-07-25T20:35:22.760+05:30  INFO 3076 --- [Management System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-26T09:11:05.623+05:30  INFO 12584 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Starting ManagementSystemApplication using Java 17.0.6 with PID 12584 (C:\Users\Lenovo\git\daas-java\target\classes started by Lenovo in C:\Users\Lenovo\git\daas-java)
+2024-07-26T09:11:05.626+05:30  INFO 12584 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-26T09:11:05.710+05:30  INFO 12584 --- [Management System] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-26T09:11:05.711+05:30  INFO 12584 --- [Management System] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-26T09:11:07.501+05:30  INFO 12584 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-26T09:11:07.584+05:30  INFO 12584 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2024-07-26T09:11:08.497+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-26T09:11:08.512+05:30  INFO 12584 --- [Management System] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-26T09:11:08.513+05:30  INFO 12584 --- [Management System] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-26T09:11:08.596+05:30  INFO 12584 --- [Management System] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring embedded WebApplicationContext
+2024-07-26T09:11:08.597+05:30  INFO 12584 --- [Management System] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2884 ms
+2024-07-26T09:11:08.950+05:30  INFO 12584 --- [Management System] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-26T09:11:09.028+05:30  INFO 12584 --- [Management System] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-26T09:11:09.075+05:30  INFO 12584 --- [Management System] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-26T09:11:09.423+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-26T09:11:09.455+05:30  INFO 12584 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-26T09:11:12.183+05:30  INFO 12584 --- [Management System] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b324139
+2024-07-26T09:11:12.186+05:30  INFO 12584 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-26T09:11:13.634+05:30  INFO 12584 --- [Management System] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-26T09:11:14.563+05:30  INFO 12584 --- [Management System] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:11:14.970+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-26T09:11:15.409+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-07-26T09:11:15.410+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-07-26T09:11:15.643+05:30  INFO 12584 --- [Management System] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-26T09:11:16.157+05:30 TRACE 12584 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped [/ws/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@216ab4f3
+2024-07-26T09:11:16.157+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-07-26T09:11:16.296+05:30 DEBUG 12584 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 31 mappings in 'requestMappingHandlerMapping'
+2024-07-26T09:11:17.182+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-26T09:11:17.604+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-26T09:11:17.709+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68225afc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@610415bd, org.springframework.security.web.context.SecurityContextHolderFilter@78b9e39f, org.springframework.security.web.header.HeaderWriterFilter@122ee595, org.springframework.web.filter.CorsFilter@5a26cd0a, org.springframework.security.web.authentication.logout.LogoutFilter@76be72a6, com.management.system.config.JwtAuthenticationFilter@456ca39a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28b8d86b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f03e072, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46a9c283, org.springframework.security.web.session.SessionManagementFilter@49a66254, org.springframework.security.web.access.ExceptionTranslationFilter@5502be82, org.springframework.security.web.access.intercept.AuthorizationFilter@27e32ad1]
+2024-07-26T09:11:17.801+05:30 TRACE 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26814a2a, started on Fri Jul 26 09:11:05 IST 2024
+2024-07-26T09:11:17.827+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AdminController:
+	
+2024-07-26T09:11:17.829+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AuthenticationController:
+	
+2024-07-26T09:11:17.830+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.DocumentController:
+	
+2024-07-26T09:11:17.830+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.EmployeeController:
+	
+2024-07-26T09:11:17.830+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.PaymentGatewayController:
+	
+2024-07-26T09:11:17.830+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.UserController:
+	
+2024-07-26T09:11:17.831+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-07-26T09:11:17.832+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.a.OpenApiWebMvcResource:
+	
+2024-07-26T09:11:17.832+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerWelcomeWebMvc:
+	
+2024-07-26T09:11:17.832+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerConfigResource:
+	
+2024-07-26T09:11:17.968+05:30 DEBUG 12584 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-26T09:11:18.024+05:30 DEBUG 12584 --- [Management System] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-26T09:11:18.517+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-26T09:11:18.633+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/daas'
+2024-07-26T09:11:18.636+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:11:18.637+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:11:18.637+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-07-26T09:11:18.638+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@203de4dc]
+2024-07-26T09:11:18.638+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@203de4dc]
+2024-07-26T09:11:18.638+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@203de4dc]]
+2024-07-26T09:11:18.638+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-07-26T09:11:18.639+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:11:18.640+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:11:18.667+05:30  INFO 12584 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Started ManagementSystemApplication in 13.569 seconds (process running for 14.542)
+2024-07-26T09:11:20.515+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-26T09:11:20.516+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-26T09:11:20.516+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-07-26T09:11:20.516+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-07-26T09:11:20.517+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-07-26T09:11:20.519+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@18419523
+2024-07-26T09:11:20.520+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@e198d28
+2024-07-26T09:11:20.521+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-07-26T09:11:20.521+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-07-26T09:11:42.441+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/index.html", parameters={}
+2024-07-26T09:11:42.445+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:11:42.477+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:11:42.520+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-ui.css", parameters={}
+2024-07-26T09:11:42.522+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:11:42.525+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-07-26T09:11:42.526+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:11:42.528+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/index.css", parameters={}
+2024-07-26T09:11:42.533+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:11:42.536+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:11:42.539+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:11:42.557+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-07-26T09:11:42.559+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:11:42.578+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:11:42.592+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-initializer.js", parameters={}
+2024-07-26T09:11:42.594+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:11:42.601+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:11:42.625+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:11:42.984+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/daas/api-docs/swagger-config", parameters={}
+2024-07-26T09:11:42.988+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-07-26T09:11:43.040+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-07-26T09:11:43.046+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/daas/api-docs/swagger-config, defaultModelsExpandDepth=-1, filter=true, oauth2RedirectUr (truncated)...]
+2024-07-26T09:11:43.061+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:11:43.105+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/daas/api-docs", parameters={}
+2024-07-26T09:11:43.106+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-07-26T09:11:43.694+05:30  INFO 12584 --- [Management System] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 567 ms
+2024-07-26T09:11:43.735+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-07-26T09:11:43.736+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Centralized Management System (CMS) Rest Services","description" (truncated)..."]
+2024-07-26T09:11:43.737+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:12:11.190+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/daas/api/v1/auth/reset/initiate?email=vn%40ctdtechs.com", parameters={masked}
+2024-07-26T09:12:11.192+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.management.system.controller.AuthenticationController#initiatePasswordReset(String)
+2024-07-26T09:12:17.139+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-07-26T09:12:17.139+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Password reset initiated. Check your email for further instructions."]
+2024-07-26T09:12:17.140+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:12:18.571+05:30  INFO 12584 --- [Management System] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 2]
+2024-07-26T09:12:48.646+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/daas/api/v1/auth/reset/verify?email=vn%40ctdtechs.com&otp=333341", parameters={masked}
+2024-07-26T09:12:48.647+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.management.system.controller.AuthenticationController#verifyOTP(String, String)
+2024-07-26T09:12:53.559+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-07-26T09:12:53.560+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["OTP verified successfully. New Password has sent to your mail."]
+2024-07-26T09:12:53.561+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:13:34.549+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/daas/api/v1/auth/login", parameters={}
+2024-07-26T09:13:34.550+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.management.system.controller.AuthenticationController#login(Login)
+2024-07-26T09:13:34.582+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.management.system.dto.Login@62163d18]
+2024-07-26T09:13:35.363+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-07-26T09:13:35.363+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.management.system.dto.JwtAuthenticationResponse@38792def]
+2024-07-26T09:13:35.364+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:13:59.055+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/daas/api/v1/user/test", parameters={}
+2024-07-26T09:13:59.056+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.management.system.controller.UserController#testAdmin()
+2024-07-26T09:13:59.056+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-07-26T09:13:59.057+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello User"]
+2024-07-26T09:13:59.057+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:15:45.494+05:30  INFO 12584 --- [Management System] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-26T09:15:45.500+05:30 DEBUG 12584 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:15:45.501+05:30 DEBUG 12584 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:15:45.501+05:30  INFO 12584 --- [Management System] [Thread-5] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-07-26T09:15:45.501+05:30  INFO 12584 --- [Management System] [Thread-5] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@203de4dc]]
+2024-07-26T09:15:45.501+05:30 DEBUG 12584 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@203de4dc]
+2024-07-26T09:15:45.501+05:30 DEBUG 12584 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@203de4dc]
+2024-07-26T09:15:45.501+05:30  INFO 12584 --- [Management System] [Thread-5] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-07-26T09:15:45.502+05:30 DEBUG 12584 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:15:45.502+05:30 DEBUG 12584 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:15:45.528+05:30  INFO 12584 --- [Management System] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:15:45.533+05:30  INFO 12584 --- [Management System] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-26T09:15:47.286+05:30  INFO 12584 --- [Management System] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-26T09:15:47.403+05:30  INFO 12584 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Starting ManagementSystemApplication using Java 17.0.6 with PID 12584 (C:\Users\Lenovo\git\daas-java\target\classes started by Lenovo in C:\Users\Lenovo\git\daas-java)
+2024-07-26T09:15:47.404+05:30  INFO 12584 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-26T09:15:47.850+05:30  INFO 12584 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-26T09:15:47.872+05:30  INFO 12584 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 4 JPA repository interfaces.
+2024-07-26T09:15:48.070+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-26T09:15:48.071+05:30  INFO 12584 --- [Management System] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-26T09:15:48.071+05:30  INFO 12584 --- [Management System] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-26T09:15:48.105+05:30  INFO 12584 --- [Management System] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring embedded WebApplicationContext
+2024-07-26T09:15:48.105+05:30  INFO 12584 --- [Management System] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 698 ms
+2024-07-26T09:15:48.300+05:30  INFO 12584 --- [Management System] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-26T09:15:48.305+05:30  INFO 12584 --- [Management System] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-26T09:15:48.320+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-26T09:15:48.323+05:30  INFO 12584 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-07-26T09:15:50.330+05:30  INFO 12584 --- [Management System] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@415e5669
+2024-07-26T09:15:50.332+05:30  INFO 12584 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-07-26T09:15:50.738+05:30  INFO 12584 --- [Management System] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-26T09:15:51.488+05:30  INFO 12584 --- [Management System] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:15:51.598+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-07-26T09:15:51.599+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-07-26T09:15:51.715+05:30  INFO 12584 --- [Management System] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-26T09:15:51.933+05:30 TRACE 12584 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped [/ws/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@2652a1fb
+2024-07-26T09:15:51.933+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-07-26T09:15:52.007+05:30 DEBUG 12584 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2024-07-26T09:15:52.808+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-26T09:15:52.997+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-26T09:15:53.047+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64984c66, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b19fd6b, org.springframework.security.web.context.SecurityContextHolderFilter@6e27af7, org.springframework.security.web.header.HeaderWriterFilter@7f323cb3, org.springframework.web.filter.CorsFilter@3dfe192f, org.springframework.security.web.authentication.logout.LogoutFilter@c561af5, com.management.system.config.JwtAuthenticationFilter@3b616bb8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58296322, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a42a92, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fd70622, org.springframework.security.web.session.SessionManagementFilter@5da6b66, org.springframework.security.web.access.ExceptionTranslationFilter@6be3470c, org.springframework.security.web.access.intercept.AuthorizationFilter@67150b7d]
+2024-07-26T09:15:53.096+05:30 TRACE 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f1da307, started on Fri Jul 26 09:15:47 IST 2024
+2024-07-26T09:15:53.102+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AdminController:
+	
+2024-07-26T09:15:53.103+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AuthenticationController:
+	
+2024-07-26T09:15:53.103+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.DocumentController:
+	
+2024-07-26T09:15:53.103+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.EmployeeController:
+	
+2024-07-26T09:15:53.103+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.PaymentGatewayController:
+	
+2024-07-26T09:15:53.103+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.UserController:
+	
+2024-07-26T09:15:53.104+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-07-26T09:15:53.105+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.a.OpenApiWebMvcResource:
+	
+2024-07-26T09:15:53.105+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerWelcomeWebMvc:
+	
+2024-07-26T09:15:53.106+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerConfigResource:
+	
+2024-07-26T09:15:53.165+05:30 DEBUG 12584 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-26T09:15:53.179+05:30 DEBUG 12584 --- [Management System] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-26T09:15:53.484+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-26T09:15:53.529+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/daas'
+2024-07-26T09:15:53.529+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:15:53.530+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:15:53.530+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-07-26T09:15:53.530+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72faf4d4]
+2024-07-26T09:15:53.530+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72faf4d4]
+2024-07-26T09:15:53.530+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72faf4d4]]
+2024-07-26T09:15:53.530+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-07-26T09:15:53.530+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:15:53.530+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:15:53.555+05:30  INFO 12584 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Started ManagementSystemApplication in 6.184 seconds (process running for 289.431)
+2024-07-26T09:15:53.953+05:30  INFO 12584 --- [Management System] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-26T09:16:14.128+05:30  INFO 12584 --- [Management System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-26T09:16:14.128+05:30  INFO 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-26T09:16:14.128+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-07-26T09:16:14.128+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-07-26T09:16:14.128+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-07-26T09:16:14.131+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3abe2611
+2024-07-26T09:16:14.132+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7ec09faa
+2024-07-26T09:16:14.133+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-07-26T09:16:14.134+05:30  INFO 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-07-26T09:16:14.144+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/daas/api/v1/auth/servertest", parameters={}
+2024-07-26T09:16:14.146+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.management.system.exception.GlobalExceptionHandler#handleGlobalException(Exception, WebRequest)
+2024-07-26T09:16:14.147+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-07-26T09:16:14.153+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{path=uri=/daas/api/v1/auth/servertest, error=Internal Server Error, message=Request method 'GET' is (truncated)...]
+2024-07-26T09:16:14.156+05:30  WARN 12584 --- [Management System] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-07-26T09:16:14.156+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-07-26T09:16:28.047+05:30  INFO 12584 --- [Management System] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-26T09:16:28.049+05:30 DEBUG 12584 --- [Management System] [Thread-7] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:16:28.049+05:30 DEBUG 12584 --- [Management System] [Thread-7] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:16:28.050+05:30  INFO 12584 --- [Management System] [Thread-7] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-07-26T09:16:28.050+05:30  INFO 12584 --- [Management System] [Thread-7] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72faf4d4]]
+2024-07-26T09:16:28.050+05:30 DEBUG 12584 --- [Management System] [Thread-7] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72faf4d4]
+2024-07-26T09:16:28.050+05:30 DEBUG 12584 --- [Management System] [Thread-7] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@72faf4d4]
+2024-07-26T09:16:28.050+05:30  INFO 12584 --- [Management System] [Thread-7] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-07-26T09:16:28.050+05:30 DEBUG 12584 --- [Management System] [Thread-7] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:16:28.050+05:30 DEBUG 12584 --- [Management System] [Thread-7] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:16:28.067+05:30  INFO 12584 --- [Management System] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:16:28.068+05:30  INFO 12584 --- [Management System] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-07-26T09:16:29.810+05:30  INFO 12584 --- [Management System] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-07-26T09:16:29.926+05:30  INFO 12584 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Starting ManagementSystemApplication using Java 17.0.6 with PID 12584 (C:\Users\Lenovo\git\daas-java\target\classes started by Lenovo in C:\Users\Lenovo\git\daas-java)
+2024-07-26T09:16:29.926+05:30  INFO 12584 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-26T09:16:30.385+05:30  INFO 12584 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-26T09:16:30.407+05:30  INFO 12584 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 4 JPA repository interfaces.
+2024-07-26T09:16:30.617+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-26T09:16:30.617+05:30  INFO 12584 --- [Management System] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-26T09:16:30.617+05:30  INFO 12584 --- [Management System] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-26T09:16:30.643+05:30  INFO 12584 --- [Management System] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring embedded WebApplicationContext
+2024-07-26T09:16:30.643+05:30  INFO 12584 --- [Management System] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 714 ms
+2024-07-26T09:16:30.829+05:30  INFO 12584 --- [Management System] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-26T09:16:30.835+05:30  INFO 12584 --- [Management System] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-26T09:16:30.848+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-26T09:16:30.850+05:30  INFO 12584 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-07-26T09:16:32.773+05:30  INFO 12584 --- [Management System] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61f39062
+2024-07-26T09:16:32.773+05:30  INFO 12584 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-07-26T09:16:33.042+05:30  INFO 12584 --- [Management System] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-26T09:16:33.748+05:30  INFO 12584 --- [Management System] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:16:33.845+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-07-26T09:16:33.845+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-07-26T09:16:33.959+05:30  INFO 12584 --- [Management System] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-26T09:16:34.201+05:30 TRACE 12584 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped [/ws/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@9ba4f6c
+2024-07-26T09:16:34.201+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-07-26T09:16:34.253+05:30 DEBUG 12584 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2024-07-26T09:16:35.131+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-26T09:16:35.570+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-26T09:16:35.623+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57875c9f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5858af57, org.springframework.security.web.context.SecurityContextHolderFilter@51901e78, org.springframework.security.web.header.HeaderWriterFilter@66f2c6d5, org.springframework.web.filter.CorsFilter@be222fb, org.springframework.security.web.authentication.logout.LogoutFilter@5c655413, com.management.system.config.JwtAuthenticationFilter@7623bd19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f6eabe2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d1d1a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9caa879, org.springframework.security.web.session.SessionManagementFilter@92d942c, org.springframework.security.web.access.ExceptionTranslationFilter@223b6477, org.springframework.security.web.access.intercept.AuthorizationFilter@6e5c2191]
+2024-07-26T09:16:35.700+05:30 TRACE 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@33e1f387, started on Fri Jul 26 09:16:29 IST 2024
+2024-07-26T09:16:35.705+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AdminController:
+	
+2024-07-26T09:16:35.705+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AuthenticationController:
+	
+2024-07-26T09:16:35.705+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.DocumentController:
+	
+2024-07-26T09:16:35.705+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.EmployeeController:
+	
+2024-07-26T09:16:35.705+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.PaymentGatewayController:
+	
+2024-07-26T09:16:35.705+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.UserController:
+	
+2024-07-26T09:16:35.706+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-07-26T09:16:35.706+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.a.OpenApiWebMvcResource:
+	
+2024-07-26T09:16:35.706+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerWelcomeWebMvc:
+	
+2024-07-26T09:16:35.706+05:30 DEBUG 12584 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerConfigResource:
+	
+2024-07-26T09:16:35.770+05:30 DEBUG 12584 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-26T09:16:35.791+05:30 DEBUG 12584 --- [Management System] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-26T09:16:36.250+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-26T09:16:36.293+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/daas'
+2024-07-26T09:16:36.296+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:16:36.297+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:16:36.298+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-07-26T09:16:36.299+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5666a7bb]
+2024-07-26T09:16:36.299+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5666a7bb]
+2024-07-26T09:16:36.299+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5666a7bb]]
+2024-07-26T09:16:36.299+05:30  INFO 12584 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-07-26T09:16:36.303+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:16:36.304+05:30 DEBUG 12584 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:16:36.327+05:30  INFO 12584 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Started ManagementSystemApplication in 6.434 seconds (process running for 332.203)
+2024-07-26T09:16:36.388+05:30  INFO 12584 --- [Management System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-26T09:16:36.388+05:30  INFO 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-26T09:16:36.388+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-07-26T09:16:36.388+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-07-26T09:16:36.389+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-07-26T09:16:36.391+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@522d185a
+2024-07-26T09:16:36.391+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7cc1d25b
+2024-07-26T09:16:36.392+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-07-26T09:16:36.392+05:30  INFO 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-07-26T09:16:36.398+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/daas/api/v1/auth/servertest", parameters={}
+2024-07-26T09:16:36.399+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.management.system.controller.AuthenticationController#serverTest()
+2024-07-26T09:16:36.403+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2024-07-26T09:16:36.403+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Server working fine..."]
+2024-07-26T09:16:36.404+05:30 DEBUG 12584 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:16:36.708+05:30  INFO 12584 --- [Management System] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-26T09:16:44.149+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-26T09:16:44.151+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:16:44.152+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:16:44.152+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-07-26T09:16:44.152+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5666a7bb]]
+2024-07-26T09:16:44.152+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5666a7bb]
+2024-07-26T09:16:44.152+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5666a7bb]
+2024-07-26T09:16:44.152+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-07-26T09:16:44.152+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:16:44.152+05:30 DEBUG 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:16:44.184+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:16:44.184+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-07-26T09:16:45.571+05:30  INFO 12584 --- [Management System] [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-07-26T09:18:31.217+05:30  WARN 12440 --- [Management System] [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Lenovo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Lenovo/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-07-26T09:18:31.245+05:30  INFO 12440 --- [Management System] [main] c.m.s.ManagementSystemApplicationTests   : Starting ManagementSystemApplicationTests using Java 17.0.6 with PID 12440 (started by Lenovo in C:\Users\Lenovo\git\daas-java)
+2024-07-26T09:18:31.247+05:30  INFO 12440 --- [Management System] [main] c.m.s.ManagementSystemApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-07-26T09:18:31.296+05:30 DEBUG 12440 --- [Management System] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@f973499
+2024-07-26T09:18:33.624+05:30  INFO 12440 --- [Management System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-26T09:18:33.743+05:30  INFO 12440 --- [Management System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 4 JPA repository interfaces.
+2024-07-26T09:18:35.005+05:30  INFO 12440 --- [Management System] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-26T09:18:35.149+05:30  INFO 12440 --- [Management System] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-26T09:18:35.211+05:30  INFO 12440 --- [Management System] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-26T09:18:35.698+05:30  INFO 12440 --- [Management System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-26T09:18:35.738+05:30  INFO 12440 --- [Management System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-26T09:18:38.042+05:30  INFO 12440 --- [Management System] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@270097ce
+2024-07-26T09:18:38.045+05:30  INFO 12440 --- [Management System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-26T09:18:39.878+05:30  INFO 12440 --- [Management System] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-26T09:18:40.821+05:30  INFO 12440 --- [Management System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:18:41.408+05:30  INFO 12440 --- [Management System] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-26T09:18:42.276+05:30  INFO 12440 --- [Management System] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-26T09:18:43.199+05:30 TRACE 12440 --- [Management System] [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped [/ws/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@7df7d5cc
+2024-07-26T09:18:43.200+05:30 DEBUG 12440 --- [Management System] [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-07-26T09:18:43.385+05:30 DEBUG 12440 --- [Management System] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2024-07-26T09:18:45.264+05:30 DEBUG 12440 --- [Management System] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-26T09:18:45.838+05:30  INFO 12440 --- [Management System] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-26T09:18:45.969+05:30  INFO 12440 --- [Management System] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@510d8c03, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@592e1c4f, org.springframework.security.web.context.SecurityContextHolderFilter@7ff4f301, org.springframework.security.web.header.HeaderWriterFilter@4ce6f39e, org.springframework.web.filter.CorsFilter@d931617, org.springframework.security.web.authentication.logout.LogoutFilter@79dba8fc, com.management.system.config.JwtAuthenticationFilter@7ec02149, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fec48ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b8117f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47786165, org.springframework.security.web.session.SessionManagementFilter@6de7c6bd, org.springframework.security.web.access.ExceptionTranslationFilter@2ed34811, org.springframework.security.web.access.intercept.AuthorizationFilter@241e03cc]
+2024-07-26T09:18:46.110+05:30 TRACE 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : Looking for @MessageExceptionHandler mappings: org.springframework.web.context.support.GenericWebApplicationContext@f973499, started on Fri Jul 26 09:18:31 IST 2024
+2024-07-26T09:18:46.145+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AdminController:
+	
+2024-07-26T09:18:46.146+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AuthenticationController:
+	
+2024-07-26T09:18:46.147+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.DocumentController:
+	
+2024-07-26T09:18:46.147+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.EmployeeController:
+	
+2024-07-26T09:18:46.147+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.PaymentGatewayController:
+	
+2024-07-26T09:18:46.148+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.UserController:
+	
+2024-07-26T09:18:46.149+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-07-26T09:18:46.150+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.a.OpenApiWebMvcResource:
+	
+2024-07-26T09:18:46.151+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerWelcomeWebMvc:
+	
+2024-07-26T09:18:46.152+05:30 DEBUG 12440 --- [Management System] [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerConfigResource:
+	
+2024-07-26T09:18:46.494+05:30 DEBUG 12440 --- [Management System] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-26T09:18:46.560+05:30 DEBUG 12440 --- [Management System] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-26T09:18:47.240+05:30 DEBUG 12440 --- [Management System] [main] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:18:47.241+05:30 DEBUG 12440 --- [Management System] [main] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:18:47.241+05:30  INFO 12440 --- [Management System] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-07-26T09:18:47.242+05:30 DEBUG 12440 --- [Management System] [main] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@39613474]
+2024-07-26T09:18:47.242+05:30 DEBUG 12440 --- [Management System] [main] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@39613474]
+2024-07-26T09:18:47.243+05:30  INFO 12440 --- [Management System] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@39613474]]
+2024-07-26T09:18:47.247+05:30  INFO 12440 --- [Management System] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-07-26T09:18:47.248+05:30 DEBUG 12440 --- [Management System] [main] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:18:47.250+05:30 DEBUG 12440 --- [Management System] [main] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:18:47.290+05:30  INFO 12440 --- [Management System] [main] c.m.s.ManagementSystemApplicationTests   : Started ManagementSystemApplicationTests in 16.667 seconds (process running for 18.496)
+2024-07-26T09:18:48.945+05:30 DEBUG 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@f973499, started on Fri Jul 26 09:18:31 IST 2024
+2024-07-26T09:18:48.951+05:30 DEBUG 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:18:48.952+05:30 DEBUG 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:18:48.952+05:30  INFO 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-07-26T09:18:48.952+05:30  INFO 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@39613474]]
+2024-07-26T09:18:48.953+05:30 DEBUG 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@39613474]
+2024-07-26T09:18:48.953+05:30 DEBUG 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@39613474]
+2024-07-26T09:18:48.953+05:30  INFO 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-07-26T09:18:48.953+05:30 DEBUG 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:18:48.954+05:30 DEBUG 12440 --- [Management System] [SpringApplicationShutdownHook] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:18:48.977+05:30  INFO 12440 --- [Management System] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:18:48.981+05:30  INFO 12440 --- [Management System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-26T09:18:50.377+05:30  INFO 12440 --- [Management System] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-26T09:21:15.301+05:30  INFO 2704 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Starting ManagementSystemApplication using Java 17.0.6 with PID 2704 (C:\Users\Lenovo\git\daas-java\target\classes started by Lenovo in C:\Users\Lenovo\git\daas-java)
+2024-07-26T09:21:15.304+05:30  INFO 2704 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-26T09:21:15.365+05:30  INFO 2704 --- [Management System] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-26T09:21:15.366+05:30  INFO 2704 --- [Management System] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-26T09:21:16.742+05:30  INFO 2704 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-26T09:21:16.819+05:30  INFO 2704 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2024-07-26T09:21:17.677+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-26T09:21:17.690+05:30  INFO 2704 --- [Management System] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-26T09:21:17.691+05:30  INFO 2704 --- [Management System] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-26T09:21:17.763+05:30  INFO 2704 --- [Management System] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring embedded WebApplicationContext
+2024-07-26T09:21:17.764+05:30  INFO 2704 --- [Management System] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2397 ms
+2024-07-26T09:21:18.092+05:30  INFO 2704 --- [Management System] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-26T09:21:18.153+05:30  INFO 2704 --- [Management System] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-26T09:21:18.194+05:30  INFO 2704 --- [Management System] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-26T09:21:18.499+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-26T09:21:18.529+05:30  INFO 2704 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-26T09:21:20.695+05:30  INFO 2704 --- [Management System] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41cfbc75
+2024-07-26T09:21:20.698+05:30  INFO 2704 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-26T09:21:22.052+05:30  INFO 2704 --- [Management System] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-26T09:21:22.987+05:30  INFO 2704 --- [Management System] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:21:23.298+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-26T09:21:23.699+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-07-26T09:21:23.699+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-07-26T09:21:23.913+05:30  INFO 2704 --- [Management System] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-26T09:21:24.394+05:30 TRACE 2704 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped [/ws/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@73e40353
+2024-07-26T09:21:24.395+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-07-26T09:21:24.515+05:30 DEBUG 2704 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2024-07-26T09:21:25.284+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-26T09:21:25.646+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-26T09:21:25.744+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10cadf58, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62579956, org.springframework.security.web.context.SecurityContextHolderFilter@717a892a, org.springframework.security.web.header.HeaderWriterFilter@57b3c014, org.springframework.web.filter.CorsFilter@6bb5fbaf, org.springframework.security.web.authentication.logout.LogoutFilter@18d885f, com.management.system.config.JwtAuthenticationFilter@33169bc7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cf5bc92, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@578bbc3c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@492be060, org.springframework.security.web.session.SessionManagementFilter@9337ce2, org.springframework.security.web.access.ExceptionTranslationFilter@40c128d0, org.springframework.security.web.access.intercept.AuthorizationFilter@679614ea]
+2024-07-26T09:21:25.838+05:30 TRACE 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@546304ab, started on Fri Jul 26 09:21:15 IST 2024
+2024-07-26T09:21:25.858+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AdminController:
+	
+2024-07-26T09:21:25.859+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AuthenticationController:
+	
+2024-07-26T09:21:25.860+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.DocumentController:
+	
+2024-07-26T09:21:25.860+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.EmployeeController:
+	
+2024-07-26T09:21:25.860+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.PaymentGatewayController:
+	
+2024-07-26T09:21:25.861+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.UserController:
+	
+2024-07-26T09:21:25.861+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-07-26T09:21:25.862+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.a.OpenApiWebMvcResource:
+	
+2024-07-26T09:21:25.863+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerWelcomeWebMvc:
+	
+2024-07-26T09:21:25.863+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerConfigResource:
+	
+2024-07-26T09:21:25.990+05:30 DEBUG 2704 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-26T09:21:26.043+05:30 DEBUG 2704 --- [Management System] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-26T09:21:26.534+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-26T09:21:26.637+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/daas'
+2024-07-26T09:21:26.639+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:21:26.639+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:21:26.640+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-07-26T09:21:26.640+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b663429]
+2024-07-26T09:21:26.640+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b663429]
+2024-07-26T09:21:26.641+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b663429]]
+2024-07-26T09:21:26.642+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-07-26T09:21:26.642+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:21:26.642+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:21:26.664+05:30  INFO 2704 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Started ManagementSystemApplication in 11.77 seconds (process running for 12.599)
+2024-07-26T09:21:27.968+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-26T09:21:27.968+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-26T09:21:27.968+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-07-26T09:21:27.969+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-07-26T09:21:27.969+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-07-26T09:21:27.973+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7206ffa4
+2024-07-26T09:21:27.974+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@54be78cb
+2024-07-26T09:21:27.975+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-07-26T09:21:27.975+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-07-26T09:21:31.678+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/index.html", parameters={}
+2024-07-26T09:21:31.683+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:21:31.712+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:21:31.751+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-ui.css", parameters={}
+2024-07-26T09:21:31.752+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-07-26T09:21:31.753+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:21:31.753+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:21:31.764+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/index.css", parameters={}
+2024-07-26T09:21:31.765+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:21:31.766+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-07-26T09:21:31.769+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-initializer.js", parameters={}
+2024-07-26T09:21:31.770+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:21:31.773+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:21:31.803+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:21:31.804+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:21:31.810+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:21:31.817+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:21:31.826+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:21:32.165+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/daas/api-docs/swagger-config", parameters={}
+2024-07-26T09:21:32.166+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-07-26T09:21:32.208+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/favicon-32x32.png", parameters={}
+2024-07-26T09:21:32.209+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:21:32.213+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:21:32.221+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-07-26T09:21:32.229+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/daas/api-docs/swagger-config, defaultModelsExpandDepth=-1, filter=true, oauth2RedirectUr (truncated)...]
+2024-07-26T09:21:32.244+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:21:32.309+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/daas/api-docs", parameters={}
+2024-07-26T09:21:32.310+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-07-26T09:21:32.963+05:30  INFO 2704 --- [Management System] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 630 ms
+2024-07-26T09:21:33.007+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-07-26T09:21:33.008+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Document Automation as a Service (DAaS) Rest Services","descript (truncated)..."]
+2024-07-26T09:21:33.009+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:21:47.679+05:30  INFO 2704 --- [Management System] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-26T09:21:47.683+05:30 DEBUG 2704 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:21:47.684+05:30 DEBUG 2704 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:21:47.684+05:30  INFO 2704 --- [Management System] [Thread-5] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-07-26T09:21:47.684+05:30  INFO 2704 --- [Management System] [Thread-5] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b663429]]
+2024-07-26T09:21:47.684+05:30 DEBUG 2704 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b663429]
+2024-07-26T09:21:47.684+05:30 DEBUG 2704 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b663429]
+2024-07-26T09:21:47.684+05:30  INFO 2704 --- [Management System] [Thread-5] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-07-26T09:21:47.684+05:30 DEBUG 2704 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:21:47.684+05:30 DEBUG 2704 --- [Management System] [Thread-5] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:21:47.712+05:30  INFO 2704 --- [Management System] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:21:47.715+05:30  INFO 2704 --- [Management System] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-26T09:21:49.452+05:30  INFO 2704 --- [Management System] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-26T09:21:49.576+05:30  INFO 2704 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Starting ManagementSystemApplication using Java 17.0.6 with PID 2704 (C:\Users\Lenovo\git\daas-java\target\classes started by Lenovo in C:\Users\Lenovo\git\daas-java)
+2024-07-26T09:21:49.577+05:30  INFO 2704 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-07-26T09:21:50.128+05:30  INFO 2704 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-26T09:21:50.153+05:30  INFO 2704 --- [Management System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+2024-07-26T09:21:50.380+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-26T09:21:50.381+05:30  INFO 2704 --- [Management System] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-26T09:21:50.382+05:30  INFO 2704 --- [Management System] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-26T09:21:50.413+05:30  INFO 2704 --- [Management System] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring embedded WebApplicationContext
+2024-07-26T09:21:50.414+05:30  INFO 2704 --- [Management System] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 832 ms
+2024-07-26T09:21:50.598+05:30  INFO 2704 --- [Management System] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-26T09:21:50.603+05:30  INFO 2704 --- [Management System] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-26T09:21:50.620+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-26T09:21:50.623+05:30  INFO 2704 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-07-26T09:21:52.560+05:30  INFO 2704 --- [Management System] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f4dd2e4
+2024-07-26T09:21:52.560+05:30  INFO 2704 --- [Management System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-07-26T09:21:52.841+05:30  INFO 2704 --- [Management System] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-26T09:21:53.560+05:30  INFO 2704 --- [Management System] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:21:53.655+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-07-26T09:21:53.656+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-07-26T09:21:53.767+05:30  INFO 2704 --- [Management System] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-26T09:21:53.975+05:30 TRACE 2704 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped [/ws/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@1f422524
+2024-07-26T09:21:53.975+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-07-26T09:21:54.030+05:30 DEBUG 2704 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2024-07-26T09:21:54.588+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-07-26T09:21:54.744+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-26T09:21:54.787+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15e0b235, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ffd55f1, org.springframework.security.web.context.SecurityContextHolderFilter@ae16350, org.springframework.security.web.header.HeaderWriterFilter@7d5191ca, org.springframework.web.filter.CorsFilter@26ae2f94, org.springframework.security.web.authentication.logout.LogoutFilter@c991cc1, com.management.system.config.JwtAuthenticationFilter@353434b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55c6da8e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b5b74c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@796fdc52, org.springframework.security.web.session.SessionManagementFilter@5dfd9ebb, org.springframework.security.web.access.ExceptionTranslationFilter@30cd1c13, org.springframework.security.web.access.intercept.AuthorizationFilter@48e4426a]
+2024-07-26T09:21:54.831+05:30 TRACE 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47d02994, started on Fri Jul 26 09:21:49 IST 2024
+2024-07-26T09:21:54.837+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AdminController:
+	
+2024-07-26T09:21:54.837+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.AuthenticationController:
+	
+2024-07-26T09:21:54.838+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.DocumentController:
+	
+2024-07-26T09:21:54.838+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.EmployeeController:
+	
+2024-07-26T09:21:54.838+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.PaymentGatewayController:
+	
+2024-07-26T09:21:54.838+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	c.m.s.c.UserController:
+	
+2024-07-26T09:21:54.838+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-07-26T09:21:54.839+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.a.OpenApiWebMvcResource:
+	
+2024-07-26T09:21:54.841+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerWelcomeWebMvc:
+	
+2024-07-26T09:21:54.841+05:30 DEBUG 2704 --- [Management System] [restartedMain] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.w.u.SwaggerConfigResource:
+	
+2024-07-26T09:21:54.894+05:30 DEBUG 2704 --- [Management System] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-26T09:21:54.907+05:30 DEBUG 2704 --- [Management System] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-26T09:21:55.173+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-26T09:21:55.213+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/daas'
+2024-07-26T09:21:55.214+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:21:55.215+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:21:55.216+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-07-26T09:21:55.218+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@29ef822b]
+2024-07-26T09:21:55.218+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@29ef822b]
+2024-07-26T09:21:55.219+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@29ef822b]]
+2024-07-26T09:21:55.219+05:30  INFO 2704 --- [Management System] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-07-26T09:21:55.219+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:21:55.219+05:30 DEBUG 2704 --- [Management System] [restartedMain] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:21:55.241+05:30  INFO 2704 --- [Management System] [restartedMain] c.m.system.ManagementSystemApplication   : Started ManagementSystemApplication in 5.707 seconds (process running for 41.176)
+2024-07-26T09:21:55.618+05:30  INFO 2704 --- [Management System] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-26T09:22:55.205+05:30  INFO 2704 --- [Management System] [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 2]
+2024-07-26T09:26:14.253+05:30  INFO 2704 --- [Management System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/daas]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-26T09:26:14.253+05:30  INFO 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-26T09:26:14.256+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-07-26T09:26:14.257+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-07-26T09:26:14.257+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-07-26T09:26:14.262+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@602b31ce
+2024-07-26T09:26:14.265+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3d23fe5a
+2024-07-26T09:26:14.266+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-07-26T09:26:14.266+05:30  INFO 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2024-07-26T09:26:14.269+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/index.html", parameters={}
+2024-07-26T09:26:14.270+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:26:14.273+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:26:14.305+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-ui.css", parameters={}
+2024-07-26T09:26:14.315+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:26:14.319+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/index.css", parameters={}
+2024-07-26T09:26:14.319+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:26:14.321+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-07-26T09:26:14.322+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:26:14.322+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:26:14.334+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-initializer.js", parameters={}
+2024-07-26T09:26:14.337+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:26:14.341+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:26:14.344+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:26:14.347+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:26:14.347+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-07-26T09:26:14.348+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:26:14.370+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:26:14.749+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/daas/api-docs/swagger-config", parameters={}
+2024-07-26T09:26:14.750+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-07-26T09:26:14.755+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-07-26T09:26:14.755+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/daas/swagger-ui/favicon-32x32.png", parameters={}
+2024-07-26T09:26:14.757+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/daas/api-docs/swagger-config, defaultModelsExpandDepth=-1, filter=true, oauth2RedirectUr (truncated)...]
+2024-07-26T09:26:14.758+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-26T09:26:14.759+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:26:14.764+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:26:14.862+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/daas/api-docs", parameters={}
+2024-07-26T09:26:14.866+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-07-26T09:26:15.146+05:30  INFO 2704 --- [Management System] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 273 ms
+2024-07-26T09:26:15.148+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-07-26T09:26:15.148+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Document Automation as a Service (DAaS) Rest Services","descript (truncated)..."]
+2024-07-26T09:26:15.149+05:30 DEBUG 2704 --- [Management System] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-26T09:26:26.463+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-26T09:26:26.465+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-07-26T09:26:26.466+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-07-26T09:26:26.466+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-07-26T09:26:26.466+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@29ef822b]]
+2024-07-26T09:26:26.466+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@29ef822b]
+2024-07-26T09:26:26.466+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@29ef822b]
+2024-07-26T09:26:26.466+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-07-26T09:26:26.467+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:26:26.467+05:30 DEBUG 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-07-26T09:26:26.487+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T09:26:26.488+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-07-26T09:26:28.236+05:30  INFO 2704 --- [Management System] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
