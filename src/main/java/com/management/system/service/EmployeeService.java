@@ -4,20 +4,23 @@ import java.util.List;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
 
+import com.management.system.dto.EmployeeDto;
 import com.management.system.entity.EmployeeEntity;
 
 public interface EmployeeService {
-	
+
 	UserDetailsService employeeDetailService();
-	
+
 	public EmployeeEntity findEmployeeById(Integer id);
-	 
+
 	public List<EmployeeEntity> searchEmployee(String query);
 
 	EmployeeEntity getEmployeeByEmail(String email);
 
-	List<EmployeeEntity> getAllEmployees();
+	List<EmployeeDto> getAllEmployees();
 
-	List<EmployeeEntity> getAllEmployeesExcludingCurrent(String currentUserEmail);
-	
+	List<EmployeeDto> getAllEmployeesExcludingCurrent(String currentUserEmail);
+
+	public String getUserRoleById(Integer userId);
+
 }

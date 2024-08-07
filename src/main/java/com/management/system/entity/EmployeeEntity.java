@@ -1,12 +1,14 @@
 package com.management.system.entity;
 
 import jakarta.persistence.*;
+
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.management.system.encryption.AppEncryption;
 import com.management.system.enumcollection.Role;
 
 import java.time.LocalDateTime;
@@ -79,7 +81,18 @@ public class EmployeeEntity implements UserDetails {
 	@Column(nullable = false)
 	private String activeStatus = "Active";
 
-	// Getters and Setters
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "organization_id")
+	private OrganizationEntity organization;
+
+	public OrganizationEntity getOrganization() {
+		return organization;
+	}
+
+	public void setOrganization(OrganizationEntity organization) {
+		this.organization = organization;
+	}
+
 	public Integer getId() {
 		return id;
 	}
@@ -89,19 +102,19 @@ public class EmployeeEntity implements UserDetails {
 	}
 
 	public String getEmployeeNumber() {
-		return employeeNumber;
+		return decryptString(employeeNumber);
 	}
 
 	public void setEmployeeNumber(String employeeNumber) {
-		this.employeeNumber = employeeNumber;
+		this.employeeNumber = encryptString(employeeNumber);
 	}
 
 	public String getFullName() {
-		return fullName;
+		return decryptString(fullName);
 	}
 
 	public void setFullName(String fullName) {
-		this.fullName = fullName;
+		this.fullName = encryptString(fullName);
 	}
 
 	public String getEmail() {
@@ -117,19 +130,19 @@ public class EmployeeEntity implements UserDetails {
 	}
 
 	public String getDepartment() {
-		return department;
+		return decryptString(department);
 	}
 
 	public void setDepartment(String department) {
-		this.department = department;
+		this.department = encryptString(department);
 	}
 
 	public String getDestination() {
-		return destination;
+		return decryptString(destination);
 	}
 
 	public void setDestination(String destination) {
-		this.destination = destination;
+		this.destination = encryptString(destination);
 	}
 
 	public Date getCreatedAt() {
@@ -207,51 +220,51 @@ public class EmployeeEntity implements UserDetails {
 	}
 
 	public String getFirstName() {
-		return firstName;
+		return decryptString(firstName);
 	}
 
 	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+		this.firstName = encryptString(firstName);
 	}
 
 	public String getLastName() {
-		return lastName;
+		return decryptString(lastName);
 	}
 
 	public void setLastName(String lastName) {
-		this.lastName = lastName;
+		this.lastName = encryptString(lastName);
 	}
 
 	public String getAddress() {
-		return address;
+		return decryptString(address);
 	}
 
 	public void setAddress(String address) {
-		this.address = address;
+		this.address = encryptString(address);
 	}
 
 	public String getGender() {
-		return gender;
+		return decryptString(gender);
 	}
 
 	public void setGender(String gender) {
-		this.gender = gender;
+		this.gender = encryptString(gender);
 	}
 
 	public String getMobileNumber() {
-		return mobileNumber;
+		return decryptString(mobileNumber);
 	}
 
 	public void setMobileNumber(String mobileNumber) {
-		this.mobileNumber = mobileNumber;
+		this.mobileNumber = encryptString(mobileNumber);
 	}
 
 	public byte[] getProfilePicture() {
-		return profilePicture;
+		return decryptBytes(profilePicture);
 	}
 
 	public void setProfilePicture(byte[] profilePicture) {
-		this.profilePicture = profilePicture;
+		this.profilePicture = encryptBytes(profilePicture);
 	}
 
 	public Integer getCreatedBy() {
@@ -269,4 +282,41 @@ public class EmployeeEntity implements UserDetails {
 	public void setActiveStatus(String activeStatus) {
 		this.activeStatus = activeStatus;
 	}
+
+	private String encryptString(String value) {
+		try {
+			return value != null ? AppEncryption.encrypt(value) : null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	private String decryptString(String value) {
+		try {
+			return value != null ? AppEncryption.decrypt(value) : null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	private byte[] encryptBytes(byte[] value) {
+		try {
+			return value != null ? AppEncryption.encryptBytes(value) : null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	private byte[] decryptBytes(byte[] value) {
+		try {
+			return value != null ? AppEncryption.decryptBytes(value) : null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
 }

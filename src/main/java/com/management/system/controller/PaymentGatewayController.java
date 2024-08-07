@@ -28,10 +28,10 @@ public class PaymentGatewayController {
 	@Autowired
 	private Environment env;
 
-	@Operation(summary = "Payment Details", description = "This API used for get Payment Details.")
-	@Tag(name = "Payment Gateway", description = "Note: A proper frontend implementation is required to access this Payments API's; otherwise, it may not function correctly.")
-	@GetMapping("/paymentDetails")
-	@ResponseBody
+//	@Operation(summary = "Payment Details", description = "This API used for get Payment Details.")
+//	@Tag(name = "Payment Gateway", description = "Note: A proper frontend implementation is required to access this Payments API's; otherwise, it may not function correctly.")
+//	@GetMapping("/paymentDetails")
+//	@ResponseBody
 	public String paymentDetails() {
 		String rzpKeyId = env.getProperty("rzp_key_id");
 		String rzpCurrency = env.getProperty("rzp_currency");
@@ -42,10 +42,10 @@ public class PaymentGatewayController {
 		return paymentDetailsJson;
 	}
 
-	@Operation(summary = "Created Payment", description = "This API used for create new payment order.")
-	@Tag(name = "Payment Gateway", description = "Note: A proper frontend implementation is required to access this Payments API's; otherwise, it may not function correctly.")
-	@GetMapping("/createPayment/{amount}")
-	@ResponseBody
+//	@Operation(summary = "Created Payment", description = "This API used for create new payment order.")
+//	@Tag(name = "Payment Gateway", description = "Note: A proper frontend implementation is required to access this Payments API's; otherwise, it may not function correctly.")
+//	@GetMapping("/createPayment/{amount}")
+//	@ResponseBody
 	public String createPaymentOrderId(@PathVariable String amount) {
 		String orderId = null;
 		try {
@@ -63,10 +63,10 @@ public class PaymentGatewayController {
 		return orderId;
 	}
 
-	@Operation(summary = "Payment Response", description = "This API used for get Payment response.")
-	@Tag(name = "Payment Gateway", description = "Note: A proper frontend implementation is required to access this Payments API's; otherwise, it may not function correctly.")
-	@RequestMapping(value = {
-			"/paymentExecution/{amount}/{contactNumber}/{companyName}/{currency}/{description}" }, method = RequestMethod.POST)
+//	@Operation(summary = "Payment Response", description = "This API used for get Payment response.")
+//	@Tag(name = "Payment Gateway", description = "Note: A proper frontend implementation is required to access this Payments API's; otherwise, it may not function correctly.")
+//	@RequestMapping(value = {
+//			"/paymentExecution/{amount}/{contactNumber}/{companyName}/{currency}/{description}" }, method = RequestMethod.POST)
 	public ResponseEntity<Object> paymentSuccess(@RequestParam("razorpay_payment_id") String razorpayPaymentId,
 			@RequestParam("razorpay_order_id") String razorpayOrderId,
 			@RequestParam("razorpay_signature") String razorpaySignature, @PathVariable Float amount,

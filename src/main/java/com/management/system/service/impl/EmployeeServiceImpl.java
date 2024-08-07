@@ -1,16 +1,20 @@
 package com.management.system.service.impl;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.management.system.dto.EmployeeDto;
+import com.management.system.dto.OrganizationDTO;
 import com.management.system.entity.EmployeeEntity;
+import com.management.system.entity.OrganizationEntity;
 import com.management.system.repository.EmployeeRepository;
 import com.management.system.service.EmployeeService;
 
@@ -21,6 +25,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
 		this.employeeRepository = employeeRepository;
+	}
+
+	public boolean canAccessUser(Integer userId, String username) {
+		EmployeeEntity employee = findEmployeeById(userId);
+		return employee.getEmail().equals(username);
 	}
 
 	@Override
@@ -55,15 +64,51 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employee.orElse(null);
 	}
 
-	@Override
-	public List<EmployeeEntity> getAllEmployees() {
-		Iterable<EmployeeEntity> iterable = employeeRepository.findAll();
-		return StreamSupport.stream(iterable.spliterator(), false).collect(Collectors.toList());
+	@Transactional
+	public List<EmployeeDto> getAllEmployees() {
+		Iterable<EmployeeEntity> employees = employeeRepository.findAll();
+		return ((Collection<EmployeeEntity>) employees).stream().map(this::convertToDTO).collect(Collectors.toList());
+	}
+
+	private EmployeeDto convertToDTO(EmployeeEntity employeeEntity) {
+		EmployeeDto employeeDto = new EmployeeDto();
+		employeeDto.setId(employeeEntity.getId());
+		employeeDto.setUserNumber(employeeEntity.getEmployeeNumber());
+		employeeDto.setFullName(employeeEntity.getFullName());
+		employeeDto.setEmail(employeeEntity.getEmail());
+		employeeDto.setDepartment(employeeEntity.getDepartment());
+		employeeDto.setDestination(employeeEntity.getDestination());
+		employeeDto.setActiveStatus(employeeEntity.getActiveStatus());
+		employeeDto.setFirstName(employeeEntity.getFirstName());
+		employeeDto.setLastName(employeeEntity.getLastName());
+		employeeDto.setAddress(employeeEntity.getAddress());
+		employeeDto.setGender(employeeEntity.getGender());
+		employeeDto.setMobileNumber(employeeEntity.getMobileNumber());
+		employeeDto.setProfilePicture(employeeEntity.getProfilePicture());
+		employeeDto.setAuthority(employeeEntity.getRole().name());
+
+		OrganizationDTO organizationDTO = new OrganizationDTO();
+		OrganizationEntity organizationEntity = employeeEntity.getOrganization();
+		if (organizationEntity != null) {
+			organizationDTO.setId(organizationEntity.getId());
+			organizationDTO.setOrganizationName(organizationEntity.getOrganizationName());
+			employeeDto.setOrganization(organizationDTO);
+		}
+
+		return employeeDto;
 	}
 
 	@Override
-	public List<EmployeeEntity> getAllEmployeesExcludingCurrent(String currentUserEmail) {
-		return employeeRepository.findByEmailNotAndActiveStatusAndNotRoleSuperadmin(currentUserEmail, "Active");
+	public List<EmployeeDto> getAllEmployeesExcludingCurrent(String currentUserEmail) {
+		Iterable<EmployeeEntity> employees = employeeRepository
+				.findByEmailNotAndActiveStatusAndNotRoleSuperadmin(currentUserEmail, "Active");
+		return ((Collection<EmployeeEntity>) employees).stream().map(this::convertToDTO).collect(Collectors.toList());
 	}
 
+	@Override
+	public String getUserRoleById(Integer userId) {
+		EmployeeEntity user = employeeRepository.findById(userId)
+				.orElseThrow(() -> new RuntimeException("User not found"));
+		return user.getRole().name();
+	}
 }

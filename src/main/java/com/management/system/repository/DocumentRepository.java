@@ -25,4 +25,6 @@ public interface DocumentRepository extends JpaRepository<DocumentEnity, Long> {
 
 	List<DocumentEnity> findByUserId(Integer userId);
 
+	long countTotalDocumentsByUserId(Integer userId);
+
 }
